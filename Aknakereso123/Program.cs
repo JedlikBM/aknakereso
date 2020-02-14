@@ -71,5 +71,22 @@ namespace aknakereso
 	        }
             Kirajzoló(pálya);
         }
+static int UnderscoreSzámoló(char[,] pálya)
+        {
+            int Underscore = 0;
+            for (int i = 0; i < pálya.GetLength(0); i++)
+            {
+                for (int j = 0; j < pálya.GetLength(1); j++)
+                {
+                    if (pálya[i,j]=='_')
+                    {
+                        Underscore++;
+                    }
+                    
+                }
+            }
+            return Underscore;
+            //43
+        }
     }
 }
